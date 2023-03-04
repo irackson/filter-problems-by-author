@@ -19,7 +19,12 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": []
+    "commands": [
+      {
+        "command": "filter-problems-by-author.runextension",
+        "title": "Filter Problems By Author"
+      }
+    ]
   },
   "configuration": {
     "filter-problems-by-author.interval": {
@@ -63,6 +68,6 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "isomorphic-git": "^1.21.0"
+    "simple-git": "^3.17.0"
   }
 }
